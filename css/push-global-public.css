@@ -1,0 +1,10 @@
+/**
+ * Styles for the push-global-ccpa anchor
+ */
+.push-global-ccpa {
+    display: none;
+}
+
+a.push-global-ccpa {
+    white-space: nowrap;
+}

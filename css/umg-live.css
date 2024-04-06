@@ -1,0 +1,352 @@
+/*PAGINATION*/
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px
+}
+.pagination>li {
+    display: inline
+}
+.pagination>li>a,
+.pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.428571429;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid #ddd;
+}
+.pagination>li:first-child>a,
+.pagination>li:first-child>span {
+    margin-left: 0;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px
+}
+.pagination>li:last-child>a,
+.pagination>li:last-child>span {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px
+}
+.pagination>li>a:hover,
+.pagination>li>span:hover,
+.pagination>li>a:focus,
+.pagination>li>span:focus {
+    background-color: #eee;
+    color:#000;
+}
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus {
+    z-index: 2;
+    color: inherit;/*#fff;*/
+    cursor: default;
+    background-color: rgba(128,128,128,0.5);/*#428bca;*/
+    border-color: #fff;
+}
+.pagination>.disabled>span,
+.pagination>.disabled>span:hover,
+.pagination>.disabled>span:focus,
+.pagination>.disabled>a,
+.pagination>.disabled>a:hover,
+.pagination>.disabled>a:focus {
+    color: inherit;
+    cursor: not-allowed;
+    background-color: transparent;
+    border-color: #ddd
+}
+.pagination-lg>li>a,
+.pagination-lg>li>span {
+    padding: 10px 16px;
+    font-size: 18px
+}
+.pagination-lg>li:first-child>a,
+.pagination-lg>li:first-child>span {
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px
+}
+.pagination-lg>li:last-child>a,
+.pagination-lg>li:last-child>span {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px
+}
+.pagination-sm>li>a,
+.pagination-sm>li>span {
+    padding: 5px 10px;
+    font-size: 12px
+}
+.pagination-sm>li:first-child>a,
+.pagination-sm>li:first-child>span {
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px
+}
+.pagination-sm>li:last-child>a,
+.pagination-sm>li:last-child>span {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px
+}
+
+
+/*DEFAULTS*/
+table.umg_live_table a.umg_live_ticket_link{
+	white-space: nowrap;
+}
+table.umg_live_table .umg_live_connect div{
+	text-align:center;
+}
+
+table.umg_live_table div.mouse_off{
+	display: none;
+}
+
+table.umg_live_table td{
+	vertical-align: middle;
+}
+
+table.umg_live_table td img.umg-live-location-pointer{
+	width: 12px;
+    margin: -3px 4px 0 0;
+    display: inline-block;
+    height: auto;
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+table.umg_live_table td.umg-live-modal-map{
+	cursor: pointer;
+}
+
+/* Track button */
+#track-via-bandsintown a, #my-city-bandsintown a {
+       border: none;
+       background-color: #0a0a0a;
+       border-radius: 4px;
+       color: #fefefe;
+       font-size: 1em;
+       font-weight: 700;
+       min-width: 210px;
+       padding: 10px;
+       display: -webkit-inline-box;
+       text-decoration: none;
+       text-align: -webkit-center;
+       margin: 1% auto;
+}
+
+.umg_live_bit_control_bar_top {
+    margin-bottom: 12px;
+}
+
+.umg_live_bit_control_bar_bottom {
+    margin-top: 12px;
+}
+
+
+
+#track-via-bandsintown a:hover, #my-city-bandsintown a:hover {
+       background: #777;
+       color: #fefefe;
+}
+
+#track-via-bandsintown img {
+   width: 16px;
+   height: 16px;
+   margin-right: 5px;
+}
+
+#track-via-bandsintown svg {
+	fill: #FFFFFF;
+}
+#umg_live_bit_control_bar {
+	width: 100%;
+}
+#track-via-bandsintown, #my-city-bandsintown {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+}
+/* MOBILE CSS RESPONSIVNESS FOR GIGS TABLE */
+@media screen and (max-width: 480px) {
+
+	.mfp-iframe-holder .mfp-content {
+	    height: 80%;
+	}
+
+	table.umg_live_table{
+		border: none;
+		border-spacing: 0;
+		margin: 0 auto;
+		font-size: 1em;
+	}
+
+	table.umg_live_table thead{
+		display:none;
+	}
+
+	table.umg_live_table tr{
+		margin: 0 0 2em;
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+	table.umg_live_table tr:after {
+		content: "";
+		display: block;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+		width: 60%;
+		text-align: center;
+		margin: 1em auto;
+	}
+	table.umg_live_table tr:last-child:after {
+		border:none;
+		margin: 0 0 2em;
+	}
+
+
+	table.umg_live_table td{
+		display: block;
+		width: 100%;
+		text-align: left;
+		border:none;
+		padding:5px;
+		line-height: 1em;
+		word-wrap: break-word;
+  		word-break: break-word;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+	table.umg_live_table td:empty{
+		padding: 0;
+	}
+
+	table.umg_live_table td.umg_live_connect a{
+		overflow: hidden;
+		display: block;
+		width: 100%;
+		padding: 2px;
+		height: auto;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+	}
+
+	table.umg_live_table td.umg_live_date {
+		text-transform: uppercase;
+		font-style: italic;
+	}
+
+	table.umg_live_table td:last-child {
+		text-align: left;
+	}
+
+
+	/* PRE HEADERS */
+
+	table.umg_live_table .umg_live_date:before,
+	table.umg_live_table .umg_live_time:before,
+	table.umg_live_table .umg_live_venue:before,
+	table.umg_live_table .umg_live_location:before,
+	table.umg_live_table .umg_live_meet:before,
+	table.umg_live_table .umg_live_win_tickets:before,
+	table.umg_live_table .umg_live_connect:before,
+	table.umg_live_table .umg_live_tickets:before,
+	table.umg_live_table .umg_live_link:before
+	{
+		font-size:10px;
+		text-transform:uppercase;
+		margin:0 auto;
+		text-align:center;
+		display:none;
+	}
+
+
+	/*DATE*/
+	table.umg_live_table .umg_live_date:before{
+		content: "Date:";
+	}
+	table.umg_live_table .umg_live_date:empty:before{
+		content: "";
+		display:none;
+	}
+
+	/*TIME*/
+	table.umg_live_table .umg_live_time:before{
+		content: "Time:";
+	}
+	table.umg_live_table .umg_live_time:empty:before{
+		content: "";
+		display:none;
+	}
+
+	/*VENUE*/
+	table.umg_live_table .umg_live_venue:before{
+		content: "Venue:";
+	}
+	table.umg_live_table .umg_live_venue:empty:before{
+		content: "";
+		display:none;
+	}
+
+	/*LOCATION*/
+	table.umg_live_table .umg_live_location:before{
+		content: "Location:";
+	}
+	table.umg_live_table .umg_live_location:empty:before{
+		content: "";
+		display:none;
+	}
+
+	/*MEET*/
+	table.umg_live_table .umg_live_meet:before{
+		content: "Meet:";
+	}
+	table.umg_live_table .umg_live_meet:empty:before{
+		content: "";
+		display:none;
+	}
+
+
+	/*WIN*/
+	table.umg_live_table .umg_live_win_tickets:before{
+		content: "Win Tickets:";
+	}
+	table.umg_live_table .umg_live_win_tickets:empty:before{
+		content: "";
+		display:none;
+	}
+
+	/*CONNECT*/
+	table.umg_live_table .umg_live_connect:before{
+		content: "Connect:";
+	}
+	table.umg_live_table .umg_live_connect:empty:before{
+		content: "";
+		display:none;
+	}
+
+	/*TICKETS*/
+	table.umg_live_table .umg_live_tickets:before{
+		content: "Tickets:";
+	}
+	table.umg_live_table .umg_live_tickets:empty:before{
+		content: "";
+		display:none;
+	}
+
+	/*LINK*/
+	table.umg_live_table .umg_live_link:before{
+		content: "Link:";
+	}
+	table.umg_live_table .umg_live_link:empty:before{
+		content: "";
+		display:none;
+	}
+
+}
