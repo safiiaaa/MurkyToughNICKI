@@ -1,0 +1,10 @@
+{
+  "rewrites": [
+    { "source": "/index", "destination": "/index.html" },
+    { "source": "/barbz", "destination": "/barbz.html" },
+    { "source": "/music", "destination": "/music.html" },
+    { "source": "/tour", "destination": "/tour.html" },
+    { "source": "/videos", "destination": "/videos.html" }
+    // Add more rewrite rules for other pages as needed
+  ]
+}
