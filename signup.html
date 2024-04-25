@@ -51,6 +51,44 @@
             background-image: url('/images/fixed-bg.jpg');
             background-size: cover;
             background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            max-width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.8); /* Add transparency */
+        }
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: black; /* Use color from CSS */
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc; /* Use border color from CSS */
+        }
+        button {
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -73,6 +111,7 @@
             <button type="submit">Sign Up</button>
         </form>
         <div id="message"></div>
+        <p style="text-align: center; font-size: 14px; color: black;">Already have an account with us? Click <a href="login.html">here</a> to login</p>
     </div>
 
     <!-- Link to JavaScript file -->
