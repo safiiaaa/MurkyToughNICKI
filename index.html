@@ -108,6 +108,27 @@
         h1, p {
             margin: 0;
             color: black;
+            margin-bottom: 20px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #555;
         }
     </style>
 </head>
@@ -115,6 +136,10 @@
     <div>
         <h1>Nicki Minaj Website is currently under construction!</h1>
         <p>We apologize for any inconvenience. Please check back later.</p>
+    </div>
+    <div class="button-container">
+        <a href="signup.html" class="button">Sign Up</a>
+        <a href="login.html" class="button">Log In</a>
     </div>
 </body>
 </html>
