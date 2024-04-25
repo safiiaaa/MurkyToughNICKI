@@ -4,6 +4,7 @@
     { "source": "/barbz/", "destination": "/barbz.html" },
     { "source": "/music/", "destination": "/music.html" },
     { "source": "/tour/", "destination": "/tour.html" },
+    { "source": "/signup/", "destination": "/signup.html" },
     { "source": "/videos/", "destination": "/videos.html" }
   ]
 }
