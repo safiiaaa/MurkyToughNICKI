@@ -4,6 +4,11 @@
     { "source": "/barbz/", "destination": "/barbz.html" },
     { "source": "/music/", "destination": "/music.html" },
     { "source": "/tour/", "destination": "/tour.html" },
+    { "source": "/index", "destination": "/index.html" },
+    { "source": "/barbz", "destination": "/barbz.html" },
+    { "source": "/music", "destination": "/music.html" },
+    { "source": "/tour", "destination": "/tour.html" },
+    { "source": "/videos", "destination": "/videos.html" },
     { "source": "/signup/", "destination": "/signup.html" },
     { "source": "/videos/", "destination": "/videos.html" }
   ]
