@@ -7,8 +7,8 @@ document.getElementById('submitBtn').addEventListener('click', function() {
         return;
     }
 
-    const webhookUrl = 'https://discord.com/api/webhooks/1252305112182034463/iHYpnwD1aqP97qFdGs0gsRwdUgZmM31EZAw_y5ZdWewRtR7pLDCaNEix-fh_NrvlolKo';
-    const message = {
+    const webhookUrl = 'YOUR_DISCORD_WEBHOOK_URL_HERE';
+    const payload = {
         content: `**Bug Report**\n**Title:** ${title}\n**Description:** ${description}`
     };
 
@@ -17,7 +17,7 @@ document.getElementById('submitBtn').addEventListener('click', function() {
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify(message),
+        body: JSON.stringify(payload),
     })
     .then(response => {
         if (response.ok) {
