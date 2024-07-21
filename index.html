@@ -4,6 +4,58 @@
 <html class="no-js" lang="en-US">
 
 <head>
+
+	/* Popup Styles */
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 1000; /* On top of other content */
+}
+
+.popup-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.join-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #7289da;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.join-button:hover {
+  background-color: #5a6ab1;
+}
+
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>
@@ -1374,6 +1426,33 @@ var umg_live = {"ajaxurl":"https:\/\/www.nickiminajofficial.com\/wp-admin\/admin
     <a href="https://discord.gg/nicki" target="_blank" class="join-button">Join Discord</a>
   </div>
 </div>
+	<script>
+// Get the popup element
+var popup = document.getElementById("discordPopup");
+
+// Get the <span> element that closes the popup
+var span = document.getElementsByClassName("close")[0];
+
+// Show the popup after a delay (e.g., 2 seconds)
+window.onload = function() {
+  setTimeout(function() {
+    popup.style.display = "block";
+  }, 2000); // Adjust delay as needed
+};
+
+// When the user clicks on <span> (x), close the popup
+span.onclick = function() {
+  popup.style.display = "none";
+};
+
+// When the user clicks anywhere outside of the popup, close it
+window.onclick = function(event) {
+  if (event.target == popup) {
+    popup.style.display = "none";
+  }
+};
+</script>
+
 
 </body>
 
