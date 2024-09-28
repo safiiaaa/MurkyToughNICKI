@@ -10,6 +10,8 @@
     { "source": "/tour", "destination": "/tour.html" },
     { "source": "/videos", "destination": "/videos.html" },
     { "source": "/signup/", "destination": "/signup.html" },
-    { "source": "/videos/", "destination": "/videos.html" }
+    { "source": "/videos/", "destination": "/videos.html" },
+    { "source": "/tos/", "destination": "/tos.html" },
+    { "source": "/tos", "destination": "/tos.html" }
   ]
 }
